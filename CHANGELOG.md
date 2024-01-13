@@ -5,3 +5,6 @@
 * Create model201-SC1 from model201-103.
     - Just cosmetic (name) change
     - uses the 201-103 template assignments
+* Create model201-SLA from model201-105.
+    - Just cosmetic (name) change
+    - uses the 201-105 template assignments
