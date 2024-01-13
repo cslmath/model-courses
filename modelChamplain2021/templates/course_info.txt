@@ -1,0 +1,9 @@
+Welcome to the course Champlain College Saint Lambert Model Course.
+<p>
+
+Some 
+<a href="/wwdoc/WWstudenttips.html" target="_blank">
+tips for students</a>.
+<br /><br />
+The 
+<a href="http://webwork.maa.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />
