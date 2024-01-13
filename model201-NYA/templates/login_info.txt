@@ -1,0 +1,7 @@
+Your Username is your seven-digit student number.
+Your initial Password is your seven-digit student number.
+As soon as you log in for the first time you should use the <em>User Settings</em> link to:
+<ul>
+<li>Change your password
+<li>Enter your email
+</ul>
