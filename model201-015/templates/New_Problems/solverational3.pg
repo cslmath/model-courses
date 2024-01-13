@@ -1,0 +1,60 @@
+# DESCRIPTION
+# Solve a rational equation
+# WeBWorK problem written by Charles Fortin, 
+# <cfortin(at)champlaincollege.qc.ca(dot)ca>
+# ENDDESCRIPTION
+
+## DBsubject('WeBWorK')
+## DBchapter('Demos')
+## DBsection('Problem')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Charles Fortin')
+## Institution('ChamplainCollege')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl"
+);
+
+# make sure we're in the context we want
+
+Context("Numeric");
+$a = random(1,10);
+$b = random(1,10);
+$c = Compute("$a*$b");
+$d = Compute("$a+$b");
+$answer = List( $a, $b );
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+Solve
+\[x+\frac{$c}{x} = $d.\]
+$BR
+$BCENTER
+\(x =\) \{ ans_rule(35) \}
+$ECENTER
+$BR
+${BITALIC}(Enter the solutions as a comma-separated
+list.)$EITALIC
+END_TEXT
+Context()->normalStrings;
+
+ANS($answer->cmp);
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();

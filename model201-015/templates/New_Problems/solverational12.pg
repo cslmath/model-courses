@@ -1,0 +1,78 @@
+# DESCRIPTION
+# Solve a rational equation
+# WeBWorK problem written by Charles Fortin, 
+# <cfortin(at)champlaincollege.qc.ca(dot)ca>
+# ENDDESCRIPTION
+
+## DBsubject('WeBWorK')
+## DBchapter('Demos')
+## DBsection('Problem')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Charles Fortin')
+## Institution('ChamplainCollege')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl",
+"contextFraction.pl",
+);
+
+# make sure we're in the context we want
+
+Context("Fraction");
+Context()->strings->add(none=>{});
+$c = 0;
+$k = 0;
+while (($c == 0) || ($k == 0)){
+	$m = random(1,4);
+	$a = random(1,2);
+	$b = random(1,2);
+	$n = Compute("1+$m");
+	$p = Compute("$a*$m");
+	$q = Compute("$a*$n"); 
+	$d = Compute("$b*$n");
+	$c = Compute("$m*$d - $p - $q");
+	$k = Compute("$p*$q/($m*$n) + ($d*$c)/$n")
+}
+$e = Compute("$m*$c");
+$f = Compute("2*$c");
+$g = Compute("$c^2");
+$h = Compute("$n*$c");
+
+$a1 = Compute("-$p");
+$a2 = Compute("-$q");
+
+$answer = List($a1,$a2);
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT 
+Solve
+\[\frac{x}{$m x-$e} + \frac{$k}{x^2 - $f x + $g} = \frac{x-$d}{$n x - $h}.\]
+$BR
+$BCENTER
+\(x =\) \{ ans_rule(35) \}
+$ECENTER
+${BITALIC}(Enter the values of \(x\) which are solutions separated by commas.  Enter ${BBOLD}none$EBOLD if 
+there are no values that satisfy the equation.)$EITALIC
+END_TEXT
+Context()->normalStrings;
+
+ANS(Compute("$answer")->cmp(studentsMustReduceFractions=>1));
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();

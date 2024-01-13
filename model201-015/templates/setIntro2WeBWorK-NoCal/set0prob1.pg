@@ -1,0 +1,135 @@
+##DESCRIPTION
+##  A very simple first problem
+##ENDDESCRIPTION
+
+##KEYWORDS('algebra')
+
+DOCUMENT();        # This should be the first executable line in the problem.
+
+loadMacros(
+"PG.pl",
+"PGbasicmacros.pl",
+"PGchoicemacros.pl",
+"PGanswermacros.pl",
+"PGauxiliaryFunctions.pl"
+);
+
+TEXT(&beginproblem);
+$showPartialCorrectAnswers = 1;
+
+$a = random(-10,-1,1);
+$b = random(1,11,1);
+$c = random(1,11,1);
+$d = random(1,11,1);
+
+BEGIN_TEXT
+This problem demonstrates how you enter numerical answers into WeBWorK. 
+$PAR
+
+Evaluate the expression \( 3($a )($b -$c -2($d )) \):
+ \{ ans_rule(10) \}
+$BR
+
+END_TEXT
+
+
+$ans = 3*($a)*($b-$c-2*($d));
+
+&ANS(strict_num_cmp($ans));
+
+BEGIN_TEXT 
+
+In the case above you need to enter a number, since we're
+testing whether you can multiply out these numbers. (You can use a
+calculator if you want.)  
+$PAR 
+
+For most problems, you will be able to get WeBWorK to do some of the
+work for you.  For example $BR Calculate \( ($a) * ($b) \): \{ ans_rule()\}
+$BR
+
+END_TEXT
+
+
+$ans = $a*$b;
+
+&ANS(std_num_cmp($ans));
+
+BEGIN_TEXT
+
+The asterisk is what most computers use to denote multiplication and
+you can use this with WeBWorK. But WeBWorK will also allow you to use
+a space to denote multiplication.  You can enter either \( ($a) * ($b) \) or \(
+$a*$b \) or even \( $a \ $b \).  All will work. Try them.
+$PAR
+
+Now try calculating the square root of 7 divided by 7 (numerically 
+\( \frac{\sqrt{7}}{7} \)
+ equals \{
+1/sqrt(7) \} or, more precisely, \( 1/\sqrt{7} \) ).  You can
+enter this as sqrt(7)/7, 
+as 1/sqrt(7), as
+7**(-.5), etc. 
+Try it.$BR
+
+\( \sqrt{7}/7 = \) \{ ans_rule(20) \}$BR
+
+Exponents can be
+indicated by either a ${LQ}$CARET${RQ} or **.  WeBWorK knows about
+functions like sqrt (square root) and abs (absolute value). 
+WeBWorK knows about many other mathematical functions such as exponential, logarithmic and trigonometric functions, that you will come across in your mathematics classes.
+$PAR
+Here's the \{
+htmlLink(qq!http://webwork.math.rochester.edu/docs/docs/pglanguage/availableFunctions.html!,"list
+of the functions") \}
+which WeBWorK understands.  WeBWorK will $BBOLD always $EBOLD use radian mode for trigonometric functions.
+$PAR
+
+END_TEXT
+
+&ANS( std_num_cmp(sqrt(7)/7) );
+
+BEGIN_TEXT
+
+You can also use juxtaposition to denote multiplication. For example, enter \(
+2\sqrt{3\pi} \).  You can enter this as 2*sqrt(3*pi)
+or more simply as 2sqrt(3pi).  Try it: $BR \{
+ans_rule(20) \} $PAR
+
+END_TEXT
+
+&ANS( std_num_cmp(2*sqrt(3*pi)) );
+
+BEGIN_TEXT
+
+Sometimes you need to use ( )'s to make your meaning
+clear. E.g. 1/2+3 is 3.5, but 1/(2+3)
+is 0.2. Why?  Try entering both and use the
+${LQ}Preview${RQ} button below to see the difference.  In addition to
+( )'s, you can also use [ ]'s and \( $LBRACE \) \( ${RBRACE}\)'s.  $BR \{ ans_rule(20) \}
+$PAR
+
+END_TEXT
+
+&ANS( std_num_cmp(.2));
+
+BEGIN_TEXT
+
+You can always try to enter answers and let WeBWorK do the
+calculating.  WeBWorK will tell you if the problem requires a strict
+numerical answer.  The way we use WeBWorK in this class there is no
+penalty for getting an answer wrong.  What counts is that you get the
+answer right eventually (before the due date).
+
+$PAR
+
+$BBOLD
+For complicated
+answers, you should use the ${LQ}Preview${RQ} button to check for
+syntax errors and also to check that the answer you enter is really
+what you think it is.
+$EBOLD
+
+END_TEXT
+
+ENDDOCUMENT();    # This should be the last executable line in the problem.

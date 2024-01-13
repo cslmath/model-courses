@@ -1,0 +1,85 @@
+# DESCRIPTION
+# Solve a system of equation involving a product
+# WeBWorK problem written by Charles Fortin, 
+# <cfortin(at)champlaincollege.qc.ca(dot)ca>
+# ENDDESCRIPTION
+
+## DBsubject('WeBWorK')
+## DBchapter('Demos')
+## DBsection('Problem')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Charles Fortin')
+## Institution('ChamplainCollege')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl",
+"contextFraction.pl",
+"contextLimitedPoint.pl",
+"AnswerFormatHelp.pl"
+);
+
+# This problem requires the student to solve the system of equations
+# x*(y+a)=1 and (x+1/(2*(a-b)))*(y+b)=1
+# The solutions are x=1/(b-a), y= b-2*a and x=-1/(2(b-a)), y =a-2b
+
+# make sure we're in the context we want
+
+Context("Fraction-NoDecimals");
+Context()->strings->add(none=>{});
+Context()->parens->set('('=>{type=>'Point'});
+
+$a = random(1,5);
+$b = random(1,5);
+
+$c = Compute("1/(2*($a-$b))");
+
+$ans1x = Compute("1/($b-$a)");
+$ans1y = Compute("$b-2*$a");
+$ans2x = Compute("-1/(2*($b-$a))");
+$ans2y = Compute("$a-2*$b");
+
+$answer = Compute("($ans1x,$ans1y),($ans2x,$ans2y)" );
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT 
+Solve the system of equations
+\[\left\lbrace
+\begin{array}{ccc}
+x(y+$a) &=& 1 \\
+(x+$c)(y+$b) &=& 1
+\end{array}
+\right.\]
+Enter a solution as \( (x,y) \),
+including the parentheses.  If there is more 
+than one correct answer, enter a comma 
+separated list of points. Decimal answers
+are not accepted. If there are no answer, enter
+${BBOLD}none$EBOLD.
+$BR
+$BCENTER
+(x,y): \{ ans_rule(20) \}
+\{ AnswerFormatHelp("points") \}
+$ECENTER
+END_TEXT
+Context()->normalStrings;
+
+ANS($answer->cmp(studentsMustReduceFractions=>1,reduceFractions=>0) );
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();

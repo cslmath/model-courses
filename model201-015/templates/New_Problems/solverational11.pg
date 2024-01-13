@@ -1,0 +1,63 @@
+# DESCRIPTION
+# Solve a rational equation
+# WeBWorK problem written by Charles Fortin, 
+# <cfortin(at)champlaincollege.qc.ca(dot)ca>
+# ENDDESCRIPTION
+
+## DBsubject('WeBWorK')
+## DBchapter('Demos')
+## DBsection('Problem')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Charles Fortin')
+## Institution('ChamplainCollege')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl",
+"contextFraction.pl",
+);
+
+# make sure we're in the context we want
+
+Context("Numeric");
+Context()->strings->add(none=>{});
+$a = random(1,5);
+$e = random(1,5);
+$b = Compute("2*$a");
+$c = Compute("$a^2");
+$d = Compute("3*$a");
+$root1 = Compute("($a-2*$e+sqrt(4*$e^2+4*$a*$e+$a^2+72))/2");
+$root2 = Compute("($a-2*$e-sqrt(4*$e^2+4*$a*$e+$a^2+72))/2");
+$answer = List($root1,$root2);
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+Solve
+\[\frac{x}{2x-$b} - \frac{3}{x^2-$bx+$c} = \frac{x-$e}{3x -$d}.\]
+$BR
+$BCENTER
+\(x =\) \{ ans_rule(35) \}
+$ECENTER
+${BITALIC}(If your answer is a fraction, it must be reduced to lowest terms. For example 2/3 is the reduced fraction of 8/12. Enter ${BBOLD}none$EBOLD if there are no values that satisfy the equation.)$EITALIC
+END_TEXT
+Context()->normalStrings;
+
+ANS($answer->cmp);
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();

@@ -1,0 +1,92 @@
+# DESCRIPTION
+# Solve a system of equation involving a product
+# WeBWorK problem written by Charles Fortin, 
+# <cfortin(at)champlaincollege.qc.ca(dot)ca>
+# ENDDESCRIPTION
+
+## DBsubject('WeBWorK')
+## DBchapter('Demos')
+## DBsection('Problem')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Charles Fortin')
+## Institution('ChamplainCollege')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl",
+"contextFraction.pl",
+"contextLimitedPoint.pl",
+"AnswerFormatHelp.pl"
+);
+
+# This problem requires the student to solve
+# xy=h; (x-k)*(y-l)=q;
+# The solutions are solutions of the equation
+# lx^2+(q-kl-h) + kh=0
+# Since lkh = mn and q-kl-h=m+n, the quadratic
+# on the left-hand side can be factored as
+# 1/l(lx+m)(lx+h)
+
+# make sure we're in the context we want
+
+Context("Fraction-NoDecimals");
+Context()->strings->add(none=>{});
+Context()->parens->set('('=>{type=>'Point'});
+
+$l = random(1,3);
+$k = random(1,3);
+$h = random(1,3);
+$m = Compute("$l*$k");
+$n = Compute("$h");
+$q = Compute("2*($m+$n)");
+
+$ans1x = Compute("-$m/$l");
+$ans1y = Compute("-($h*$l)/$m");
+$ans2x = Compute("-$h/$l");
+$ans2y = Compute("-$l");
+
+$answer = Compute("($ans1x,$ans1y),($ans2x,$ans2y)" );
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT 
+Solve the system of equations
+\[\left\lbrace
+\begin{array}{ccc}
+xy &=& $h \\
+(x-$k)(y-$l) &=& $q
+\end{array}
+\right.\]
+Enter a solution as \( (x,y) \),
+including the parentheses.  If there is more 
+than one correct answer, enter a comma 
+separated list of points. Decimal answers
+are not accepted. If there are no answer, enter
+${BBOLD}none$EBOLD.
+$BR
+$BCENTER
+(x,y): \{ ans_rule(20) \}
+\{ AnswerFormatHelp("points") \}
+$ECENTER
+END_TEXT
+Context()->normalStrings;
+
+ANS($answer->cmp(studentsMustReduceFractions=>1,reduceFractions=>0) );
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();
+

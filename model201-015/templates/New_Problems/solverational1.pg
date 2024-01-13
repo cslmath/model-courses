@@ -1,0 +1,86 @@
+# DESCRIPTION
+# Solve a rational equation
+# WeBWorK problem written by Charles Fortin, 
+# <cfortin(at)champlaincollege.qc.ca(dot)ca>
+# ENDDESCRIPTION
+
+## DBsubject('WeBWorK')
+## DBchapter('Demos')
+## DBsection('Problem')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Charles Fortin')
+## Institution('ChamplainCollege')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGchoicemacros.pl",
+"contextFraction.pl",
+);
+
+# Euclid's Algorithm used to simplify fractions
+sub euc_alg {
+    my ($m, $n) = ($_[0], $_[1]);
+    my $r;
+
+    while ($m % $n != 0) {
+        $r = $m % $n;
+        $m = $n;
+        $n = $r;
+    }
+    return $n;
+}
+
+# make sure we're in the context we want
+
+Context("Fraction");
+Context()->strings->add(none=>{});
+$a = random(1,10);
+$b = random(1,10);
+$c = random(1,10);
+$d = random(1,10);
+$e = Compute("2*$b");
+$f = Compute("2*$d");
+$g = Compute("(2*$a*$d+$b*$c)/$d");
+
+$pgcd1 = euc_alg($a,$b);
+$pgcd2 = euc_alg($c,$f);
+$newa = Compute("$a/$pgcd1");
+$newb = Compute("$b/$pgcd1");
+$newc = Compute("$c/$pgcd2");
+$newf = Compute("$f/$pgcd2");
+
+$answer = Compute("$g");
+
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+Solve
+\[\frac{x}{$e} = \frac{$newa}{$newb} + \frac{$newc}{$newf}.\]
+$BR
+$BCENTER
+\(x =\) \{ ans_rule(35) \}
+$ECENTER
+$BR
+${BITALIC}(If your answer is a fraction, it must be reduced to lowest terms. For example 2/3 is the reduced fraction of 8/12. Enter ${BBOLD}none$EBOLD if there are no values that satisfy the equation.)$EITALIC
+END_TEXT
+Context()->normalStrings;
+
+ANS($answer->cmp(studentsMustReduceFractions=>1));
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();
