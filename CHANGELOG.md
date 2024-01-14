@@ -8,3 +8,5 @@
 * Create model201-SLA from model201-105.
     - Just cosmetic (name) change
     - uses the 201-105 template assignments
+* Create model203-NYA-physics from modelChamplain2-21.
+    - Just cosmetic (name) change
