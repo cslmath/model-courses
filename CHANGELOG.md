@@ -1,3 +1,16 @@
+# CHANGELOG
+
+The changelog for the [model course repository](https://github.com/cslmath/model-Courses).
+
+## 2025-01-13
+
+* Create model201-SC2 from model201-203 in such a way that the git history of both models
+  (`git blame` etc) is preserved.
+* Create model201-SN2, model201-SN3, model201-SN4
+  from model201-NYA, model201-NYB, model201-NYC respectively.
+* Update `model-include-from` for the new models.
+* Start keeping track of notes in `notes.md`.
+
 ## 2025-01-12
 
 * Track `model-include-from` and `model-exclude-from`
@@ -16,14 +29,14 @@
 * Create repo from the contents of the on-line model courses tracking only `course.conf`, `hide_directory`, and the contents of `templates/`.
 * edit tips link in `course_info.txt` to point to the new docs location (this avoids a redirect).
 * Create model201-SC1 from model201-103.
-    - Just cosmetic (name) change
-    - uses the 201-103 template assignments
+  - Just cosmetic (name) change
+  - uses the 201-103 template assignments
 * Create model201-SLA from model201-105.
-    - Just cosmetic (name) change
-    - uses the 201-105 template assignments
+  - Just cosmetic (name) change
+  - uses the 201-105 template assignments
 * Create model203-NYA-physics from modelChamplain2021.
-    - Just cosmetic (name) change
+  - Just cosmetic (name) change
 * Create model203-NYB-physics from modelChamplain2021.
-    - Just cosmetic (name) change
+  - Just cosmetic (name) change
 * Create model203-NYC-physics from modelChamplain2021.
-    - Just cosmetic (name) change
+  - Just cosmetic (name) change
