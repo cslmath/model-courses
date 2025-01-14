@@ -1,3 +1,16 @@
+## 2025-01-12
+
+* Track `model-include-from` and `model-exclude-from`
+  which enable syncing from the model courses on the server into this git repository.
+  `rsync -avv --include-from=model-include-from --exclude-from=model-exclude-from /opt/webwork/courses/* ./`
+  will copy the tracked files from the courses directory into . for tracking.
+* Exclude the tmpEdit directories from tracking.
+* Fix the symlinks in the repos pointing to libraries and to quiz and assignment definitions.
+(`git config --local core.symlinks true` to keep them fixed).
+* 201-016: Delete an unused problem.
+* 201-016: Add a button that displays in the Library Browser
+  that shows problems whose source code is in the template problem directory.
+
 ## 2024-01-13
 
 * Create repo from the contents of the on-line model courses tracking only `course.conf`, `hide_directory`, and the contents of `templates/`.
