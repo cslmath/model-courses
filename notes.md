@@ -8,6 +8,10 @@ notes regarding the
 cd model-Courses
 rsync -avv --include-from=model-include-from --exclude-from=model-exclude-from /opt/webwork/courses/* ./
 
+# Copy all tracked model course files from the staging location into the live location
+sudo rsync -avv --include-from=model-include-from --exclude-from=model-exclude-from ./* /opt/webwork/courses/
+sudo chown -R www-data:www-data /opt/webwork/courses/
+
 # Update staging from GitHub
 git pull
 
