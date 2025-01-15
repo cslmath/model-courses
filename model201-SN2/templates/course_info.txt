@@ -1,10 +1,10 @@
-Welcome to the course 201-NYA <br />
-Calculus I for Science.
+Welcome to the course 201-SN2-RE<br />
+Calculus I: Differential Calculus for Science.
 <p>
 
-Some 
+Here are some 
 <a href="https://champlainww.ca/students/students.html" target="_blank">
 tips for students</a>.
 <br /><br />
-The 
+Here are the 
 <a href="http://webwork.maa.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />

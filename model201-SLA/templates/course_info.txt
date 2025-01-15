@@ -1,9 +1,10 @@
-Welcome to the course 201-SLA Linear Algebra for Social Science.
+Welcome to the course 201-SLA-LA<br />
+Linear Algebra for Social Science.
 <p>
 
-Some 
+Here are some 
 <a href="https://champlainww.ca/students/students.html" target="_blank">
 tips for students</a>.
 <br /><br />
-The 
+Here are the 
 <a href="http://webwork.maa.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />

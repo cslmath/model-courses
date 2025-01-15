@@ -9,7 +9,9 @@ The changelog for the [model course repository](https://github.com/cslmath/model
 * Create model201-SN2, model201-SN3, model201-SN4
   from model201-NYA, model201-NYB, model201-NYC respectively.
 * Update `model-include-from` for the new models.
-* Start keeping track of notes in `notes.md`.
+* Start keeping track of notes of procedures in `notes.md`.
+* Create the README and course_info.txt in models 201-SC2, 201-SN2, 201-SN3, 201-SN4.
+* Tweak the README and course_info.txt in models 201-SC1 and 201-SLA.
 
 ## 2025-01-12
 

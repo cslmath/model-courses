@@ -1,5 +1,5 @@
-Welcome to the course 201-SC1-LA
-Calculus I: Differential Calculus (Social Science).
+Welcome to the course 201-SC1-LA<br />
+Calculus I: Differential Calculus for Social Science.
 <p>
 
 Here are some 

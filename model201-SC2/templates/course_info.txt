@@ -1,11 +1,10 @@
-Welcome to the course 201-203
-Calculus II for Social Science.
+Welcome to the course 201-SC2-LA<br />
+Calculus II: Integral Calculus for Social Science.
 <p>
 
-Some 
+Here are some 
 <a href="https://champlainww.ca/students/students.html" target="_blank">
 tips for students</a>.
 <br /><br />
-The 
+Here are the 
 <a href="http://webwork.maa.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />
-

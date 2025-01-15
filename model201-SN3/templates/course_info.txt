@@ -1,10 +1,10 @@
-Welcome to the course 201-NYB<br />
-Calculus II for Science.
+Welcome to the course 201-SN3-RE<br />
+Calculus II: Integral Calculus for Science.
+<p>
 
-<br /><br />
-Some 
+Here are some 
 <a href="https://champlainww.ca/students/students.html" target="_blank">
 tips for students</a>.
 <br /><br />
-The 
+Here are the 
 <a href="http://webwork.maa.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />
