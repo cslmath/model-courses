@@ -9,7 +9,7 @@ loadMacros(
 "PGanswermacros.pl"
 );
 
-$dateTime = $formatedDueDate;
+$dateTime = $formattedDueDate;
 $instructor = '';
 $course = protect_underbar($courseName);
 $setNumber = protect_underbar($setNumber);
