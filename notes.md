@@ -9,6 +9,7 @@ cd model-Courses
 rsync -avv --include-from=model-include-from --exclude-from=model-exclude-from /opt/webwork/courses/* ./
 
 # Copy all tracked model course files from the staging location into the live location
+sudo chmod -R a=r,u+w,a+X .
 sudo rsync -avv --include-from=model-include-from --exclude-from=model-exclude-from ./* /opt/webwork/courses/
 sudo chown -R www-data:www-data /opt/webwork/courses/
 
