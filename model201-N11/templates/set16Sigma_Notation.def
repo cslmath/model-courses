@@ -1,8 +1,8 @@
 assignmentType      = default
-openDate          = 11/09/2016 at 10:12am EST
+openDate          = 12/24/2025 at 10:00am EST
 reducedScoringDate = 12/31/1969 at 07:00pm EST
-dueDate           = 11/16/2016 at 11:59pm EST
-answerDate        = 11/18/2016 at 11:59pm EST
+dueDate           = 12/31/2026 at 10:00am EST
+answerDate        = 12/31/2026 at 10:00am EST
 enableReducedScoring = N
 paperHeaderFile   = defaultHeader
 screenHeaderFile  = defaultHeader
@@ -10,13 +10,14 @@ description       = Also known as summation notation.
 restrictProbProgression = 0
 emailInstructor   = 0
 
-problemListV2 
+problemListV2
 problem_start
 problem_id = 1
 source_file = Library/Union/setIntSigmaNotation/an6_4_07a.pg
 value = 1
 max_attempts = -1
 showMeAnother = -1
+showHintsAfter = -2
 prPeriod = -1
 counts_parent_grade = 0
 att_to_open_children = 0 
@@ -27,6 +28,7 @@ source_file = Library/Hope/Calc1/05-02-Sigma-notation/sigma-notation-B04.pg
 value = 1
 max_attempts = -1
 showMeAnother = -1
+showHintsAfter = -2
 prPeriod = -1
 counts_parent_grade = 0
 att_to_open_children = 0 
@@ -37,6 +39,7 @@ source_file = Library/Hope/Calc1/05-02-Sigma-notation/sigma-notation-B03.pg
 value = 1
 max_attempts = -1
 showMeAnother = -1
+showHintsAfter = -2
 prPeriod = -1
 counts_parent_grade = 0
 att_to_open_children = 0 
@@ -47,16 +50,18 @@ source_file = Library/Hope/Calc1/05-02-Sigma-notation/sigma-notation-01.pg
 value = 1
 max_attempts = -1
 showMeAnother = -1
+showHintsAfter = -2
 prPeriod = -1
 counts_parent_grade = 0
 att_to_open_children = 0 
 problem_end
 problem_start
 problem_id = 5
-source_file = Library/Hope/Calc1/05-02-Sigma-notation/sigma-notation-D02.pg
+source_file = Template_201-N11/library-edits/Library/Hope/Calc1/05-02-Sigma-notation/sigma-notation-D02.pg
 value = 1
 max_attempts = -1
 showMeAnother = -1
+showHintsAfter = -2
 prPeriod = -1
 counts_parent_grade = 0
 att_to_open_children = 0 
@@ -67,6 +72,7 @@ source_file = Library/Hope/Calc1/05-02-Sigma-notation/sigma-notation-D05.pg
 value = 1
 max_attempts = -1
 showMeAnother = -1
+showHintsAfter = -2
 prPeriod = -1
 counts_parent_grade = 0
 att_to_open_children = 0 
