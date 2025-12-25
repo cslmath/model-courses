@@ -53,7 +53,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 5
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/lh1-3_39.pg
+source_file = Library/Rochester/setAlgebra09LinearEqnsModeling/lh1-3_39.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -63,7 +63,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 6
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/srw1_6_11.pg
+source_file = Library/NAU/setLinearModeling/linearmodeling4.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -73,7 +73,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 7
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/srw1_6_29.pg
+source_file = Library/Rochester/setAlgebra09LinearEqnsModeling/srw1_6_29.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -83,7 +83,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 8
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/paintingpartners.pg
+source_file = Library/Rochester/setAlgebra09LinearEqnsModeling/paintingpartners.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -93,7 +93,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 9
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/lh1-3_54.pg
+source_file = Library/Rochester/setAlgebra09LinearEqnsModeling/lh1-3_54.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -103,7 +103,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 10
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/lh1-3_38.pg
+source_file = Library/Rochester/setAlgebra09LinearEqnsModeling/lh1-3_38.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -113,7 +113,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 11
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/srw1_6_31.pg
+source_file = Library/Rochester/setAlgebra09LinearEqnsModeling/srw1_6_31.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -123,7 +123,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 12
-source_file = Library/maCalcDB/setAlgebra09LinearEqnsModeling/srw1_6_20.pg
+source_file = Library/Rochester/setAlgebra09LinearEqnsModeling/srw1_6_20.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

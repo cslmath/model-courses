@@ -13,7 +13,7 @@ emailInstructor   =
 problemListV2 
 problem_start
 problem_id = 1
-source_file = Library/Utah/AP_Calculus_I/set1_Reviews_of_Fundamentals/1210s1p9.pg
+source_file = Library/Rochester/setGeometry1Points/srw1_9_2.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -23,7 +23,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 2
-source_file = Library/Utah/Calculus_I/set1_Preliminaries/1210s1p16.pg
+source_file = Library/Rochester/setGeometry2Lines/srw1_10_19a_mo.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -33,7 +33,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 3
-source_file = Library/Utah/Calculus_I/set1_Preliminaries/1210s1p9.pg
+source_file = Library/Rochester/setGeometry1Points/srw1_9_2.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -43,7 +43,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 4
-source_file = Library/Utah/Calculus_I/set1_Preliminaries/1210s1p17.pg
+source_file = Library/Rochester/setGeometry2Lines/sApB_21-26.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -63,7 +63,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 6
-source_file = Library/ma117DB/set2/srw1_10_27.pg
+source_file = Library/Rochester/setAlgebra14Lines/srw1_10_19_mo.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

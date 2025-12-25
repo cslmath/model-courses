@@ -13,7 +13,7 @@ emailInstructor   =
 problemListV2 
 problem_start
 problem_id = 1
-source_file = Library/Rochester/setTrig08Equations/p1.pg
+source_file = Library/ASU-topics/setTrigEquations/p1.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -23,7 +23,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 2
-source_file = Library/Rochester/setTrig08Equations/p2.pg
+source_file = Library/ASU-topics/setTrigEquations/p2.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -43,7 +43,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 4
-source_file = Library/Rochester/setTrig08Equations/p5.pg
+source_file = Library/ASU-topics/setTrigEquations/p5-pc.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -53,7 +53,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 5
-source_file = Library/Rochester/setTrig08Equations/p6.pg
+source_file = Library/ASU-topics/setTrigEquations/p6-pc.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -63,7 +63,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 6
-source_file = Library/Rochester/setTrig08Equations/p7.pg
+source_file = Library/ASU-topics/setTrigEquations/p7.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -73,7 +73,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 7
-source_file = Library/Rochester/setTrig08Equations/p8.pg
+source_file = Library/ASU-topics/setTrigEquations/p8.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -93,7 +93,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 9
-source_file = Library/Rochester/setTrig08Equations/p11.pg
+source_file = Library/ASU-topics/setTrigEquations/p11.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

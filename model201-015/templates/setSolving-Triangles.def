@@ -33,7 +33,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 3
-source_file = Library/ASU-topics/setTrigApplications/p3.pg
+source_file = Library/Rochester/setTrig09Laws/p3.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -73,7 +73,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 7
-source_file = Library/Rochester/setTrig09Laws/srw6_5_1.pg
+source_file = Library/ASU-topics/setTrigApplications/srw6_5_1.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -103,7 +103,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 10
-source_file = Library/Rochester/setTrig09Laws/p2.pg
+source_file = Library/Rochester/setTrig09Laws/p3.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -123,7 +123,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 12
-source_file = Library/Rochester/setTrig09Laws/srw6_4_11.pg
+source_file = Library/Union/setTrigTriangles/p4.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -133,7 +133,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 13
-source_file = Library/Rochester/setTrig09Laws/p4.pg
+source_file = Library/./ASU-topics/setTrigApplications/p4.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

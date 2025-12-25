@@ -33,7 +33,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 3
-source_file = Library/maCalcDB/setAlgebra28ExpFunctions/c6s1p15_20/c6s1p15_20.pg
+source_file = Library/maCalcDB/setAlgebra28ExpFunctions/c4s1p13_18/c4s1p13_18.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -53,7 +53,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 5
-source_file = Library/ASU-topics/setExponentialFunctions/c6s1p15_20/c6s1p15_20.pg
+source_file = Library/maCalcDB/setAlgebra28ExpFunctions/c4s1p13_18/c4s1p13_18.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

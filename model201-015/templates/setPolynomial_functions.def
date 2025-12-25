@@ -13,7 +13,7 @@ emailInstructor   =
 problemListV2 
 problem_start
 problem_id = 1
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/srw3_2_7.pg
+source_file = Library/Rochester/setAlgebra22PolynomialDivision/srw3_2_7.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -23,7 +23,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 2
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/long_division_0.pg
+source_file = Library/Rochester/setAlgebra22PolynomialDivision/long_division_0.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -33,7 +33,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 3
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/srw3_2_15.pg
+source_file = Library/./Rochester/setAlgebra22PolynomialDivision/sw5_2_15.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -43,7 +43,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 4
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/synth_division.pg
+source_file = Library/Rochester/setAlgebra22PolynomialDivision/synth_division.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -53,7 +53,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 5
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/sw5_2_19.pg
+source_file = Library/Rochester/setAlgebra22PolynomialDivision/sw5_2_19.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -63,7 +63,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 6
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/srw3_2_3.pg
+source_file = Library/ma112DB/set8/sw5_2_3.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -73,7 +73,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 7
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/long_division_1.pg
+source_file = Library/Rochester/setAlgebra22PolynomialDivision/long_division_1.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -83,7 +83,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 8
-source_file = Library/maCalcDB/setAlgebra22PolynomialDivision/long_div_easy.pg
+source_file = Library/Rochester/setAlgebra22PolynomialDivision/long_div_easy.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -93,7 +93,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 9
-source_file = Library/ma112DB/set8/sw5_2_5.pg
+source_file = Library/ASU-topics/setPolynomialDivision/srw3_2_5.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

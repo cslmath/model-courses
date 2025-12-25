@@ -83,7 +83,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 8
-source_file = Library/Rochester/setIntegrals14Substitution/S05.05.Substitution.PTP02b.pg
+source_file = Library/Rochester/setIntegrals14Substitution/S05.05.Substitution.PTP02a.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -93,7 +93,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 9
-source_file = Library/Rochester/setIntegrals14Substitution/S05.05.Substitution.PTP06.pg
+source_file = Library/Rochester/setIntegrals14Substitution/sc5_5_20.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -113,7 +113,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 11
-source_file = Library/Union/setIntSubstitution/an6_3_11.pg
+source_file = Library/Rochester/setIntegrals14Substitution/sc5_5_26.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -163,7 +163,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 16
-source_file = Library/Rochester/setIntegrals22Average/ur_in_22_3.pg
+source_file = Library/./UVA-Stew5e/setUVA-Stew5e-C06S05-AveValue/6-5-06.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -183,7 +183,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 18
-source_file = Library/Rochester/setIntegrals0Theory/osu_in_0_15.pg
+source_file = Library/ma122DB/set11/s5_2_64.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

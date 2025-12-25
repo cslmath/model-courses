@@ -103,7 +103,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 10
-source_file = Library/Rochester/setTrig04FunctionsAnyAngle/p2.pg
+source_file = Library/Rochester/setTrig04FunctionsAnyAngle/p10_mo.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -193,7 +193,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 19
-source_file = Library/Rochester/setTrig04FunctionsAnyAngle/ur_tr_1_11.pg
+source_file = Library/Rochester/setTrig04FunctionsAnyAngle/p3.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

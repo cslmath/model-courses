@@ -23,7 +23,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 2
-source_file = Library/ASU-topics/setInverseFunctions/sw4_8_17.pg
+source_file = Library/Rochester/setAlgebra18FunInverse/sw4_8_17.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -43,7 +43,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 4
-source_file = Library/ASU-topics/setInverseFunctions/pinv2.pg
+source_file = Library/ASU-topics/setInverseFunctions/pinv1_mo.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -53,7 +53,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 5
-source_file = Library/ASU-topics/setInverseFunctions/srw2_9_41.pg
+source_file = Library/ASU-topics/setInverseFunctions/srw2_9_41_mo.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -63,7 +63,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 6
-source_file = Library/ASU-topics/setInverseFunctions/pinv1.pg
+source_file = Library/ASU-topics/setInverseFunctions/pinv1_mo.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -103,7 +103,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 10
-source_file = Library/Utah/Business_Algebra/set5_Quadratic_and_Other_Special_Functions/p08.pg
+source_file = Library/Utah/College_Algebra/set7_Polynomial_and_Rational_Functions/1050s7p4.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -153,7 +153,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 15
-source_file = Library/Utah/College_Algebra/set6_Polynomial_and_Rational_Functions/1050s6p21.pg
+source_file = Library/Utah/Business_Algebra/set5_Quadratic_and_Other_Special_Functions/p03.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -173,7 +173,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 17
-source_file = Library/Utah/College_Algebra/set6_Polynomial_and_Rational_Functions/1050s6p22.pg
+source_file = Library/Utah/Business_Algebra/set5_Quadratic_and_Other_Special_Functions/p04.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

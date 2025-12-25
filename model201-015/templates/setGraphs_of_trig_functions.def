@@ -133,7 +133,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 13
-source_file = Library/Rochester/setTrig05Graphs/mec_4_7.pg
+source_file = Library/ASU-topics/setTrigGraphs/p3.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
@@ -153,7 +153,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 15
-source_file = Library/Rochester/setTrig05Graphs/p3.pg
+source_file = Library/Rochester/setTrig05Graphs/p24.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
