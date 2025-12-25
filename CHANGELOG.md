@@ -4,8 +4,9 @@ The changelog for the [model course repository](https://github.com/cslmath/model
 
 ## 2025-12-24
 
-Update set16 and set23 in 201-N11
-
+* Update set16 and set23 in 201-N11.
+* Some miscellaneous clean up of the repo.
+ 
 ## 2025-09-20
 
 Update all $formatedDueDate references to $formattedDueDate
