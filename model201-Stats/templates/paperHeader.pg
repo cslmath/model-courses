@@ -7,7 +7,7 @@ loadMacros("PG.pl",
 );
 
 
-$dateTime = $formatedDueDate;
+$dateTime = $formattedDueDate;
 $sectionNumber = protect_underbar($sectionNumber);
 $setNumber = protect_underbar($setNumber);
 $course = protect_underbar(XXX-***);

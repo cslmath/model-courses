@@ -2,6 +2,10 @@
 
 The changelog for the [model course repository](https://github.com/cslmath/model-Courses).
 
+## 2025-09-20
+
+Update all $formatedDueDate references to $formattedDueDate
+
 ## 2025-01-13
 
 * Create model201-SC2 from model201-203 in such a way that the git history of both models
