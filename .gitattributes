@@ -1,0 +1,50 @@
+# .gitattributes for model-courses
+
+# modelled on the OPL .gitattributes
+
+# Set default behaviour, in case users don't have core.autocrlf set.
+
+# If you want to override this setting locally,
+# for example on Windows you want the files in your working tree
+# to use `lf` and not `crlf`, make a setting in `$GIT_DIR/info/attributes`
+# `* text eol=lf` is the relevant setting to force `lf` in checkedout text
+# files on Windows.
+
+* text=auto
+
+# Explicitly declare text files we want to always be normalized and converted 
+# to native line endings on checkout.
+
+*.def    text
+*.htm    text
+*.html   text
+*.log    text
+*.LOG    text
+*.md     text
+*.pg     text
+*.pl     text
+*.svg    text
+*.txt    text
+
+# From Model-Courses
+
+*.at     text
+*.axp    text
+*.conf   text
+*.lst    text
+*.msg    text
+
+*.tgz    binary
+
+# Declare files that will always have CRLF line endings on checkout.
+
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+# `binary` is a macro for `-text` `-diff`
+
+*.gif    binary
+*.jpg    binary
+*.jpeg   binary
+*.png    binary
+*.gifjpg binary
