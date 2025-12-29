@@ -13,7 +13,7 @@ emailInstructor   =
 problemListV2 
 problem_start
 problem_id = 1
-source_file = Library/./Utah/AP_Calculus_I/set1_Reviews_of_Fundamentals/1210s2p20.pg
+source_file = Library/Utah/AP_Calculus_I/set1_Reviews_of_Fundamentals/1210s2p20.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

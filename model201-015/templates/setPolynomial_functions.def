@@ -33,7 +33,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 3
-source_file = Library/./Rochester/setAlgebra22PolynomialDivision/sw5_2_15.pg
+source_file = Library/Rochester/setAlgebra22PolynomialDivision/sw5_2_15.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

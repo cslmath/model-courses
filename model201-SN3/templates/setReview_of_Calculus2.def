@@ -163,7 +163,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 16
-source_file = Library/./UVA-Stew5e/setUVA-Stew5e-C06S05-AveValue/6-5-06.pg
+source_file = Library/UVA-Stew5e/setUVA-Stew5e-C06S05-AveValue/6-5-06.pg
 value = 1
 max_attempts = -1
 showMeAnother = 

@@ -113,7 +113,7 @@ att_to_open_children =
 problem_end
 problem_start
 problem_id = 11
-source_file = Library/./Utah/Intermediate_Algebra/set2_Fundamentals_of_Algebra/s2p9.pg
+source_file = Library/Utah/Intermediate_Algebra/set2_Fundamentals_of_Algebra/s2p9.pg
 value = 1
 max_attempts = -1
 showMeAnother = 
