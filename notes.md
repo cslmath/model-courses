@@ -55,4 +55,39 @@ The model course naming scheme:
     example: `model201-NYB`
 
 The course title can have more detail if needed, for example,
-_model201-SN3 Calculus II: Integral Calculus for Science)_.
+_model201-SN3 Calculus II: Integral Calculus for Science)_,
+or _model203-SN2-LA Électricité et magnétisme_.
+
+## Change the name of a model course
+
+* In _staging_:  
+
+  ```bash
+  git mv <old name>/ <new name>/
+  # Add <new name> and delete <old name> from model-include-from
+  nano model-include-from
+  git add model-include-from
+  git commit -m "Rename <old name> to <new name>."
+  ```
+
+* In the _admin course_:
+  - Make a new course with name <new name>
+  - based on <old name>
+  - copy `simple.conf`
+* In _staging_:  
+  Pull in and commit the new course files.  
+  
+  ```bash
+  rsync -avv --include-from=model-include-from --exclude-from=model-exclude-from /opt/webwork/courses/* ./
+  git add <new name>
+  git commit -S -m "Initialize <new name>"
+  ```
+
+* In _<new course>_:
+  - make any and all changes needed, including template links, README, course_info etc.
+* In _staging_:  
+  Pull in and commit the edited course files.  
+  As above.
+* When all is good, edit localOverrides.conf to add the newly named model to the list. (RCS etc for now at least).
+* push the model course changes to GitHub.
+  In _staging_, `git push`.
