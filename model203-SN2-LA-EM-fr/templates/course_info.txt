@@ -1,9 +1,9 @@
-Welcome to the course 203-NYB Electricity and Magnetism.
-<p>
-
-Some 
-<a href="https://champlainww.ca/students/students.html" target="_blank">
-tips for students</a>.
+Bienvenue au cours 203-SN2-LA
+Électricité et magnétisme.
 <br /><br />
-The 
-<a href="http://webwork.maa.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />
+Voici quelques 
+<a href="https://champlainww.ca/students/students.html" target="_blank">
+conseils pour les étudiants</a> (anglais).
+<br /><br />
+Voici les 
+<a href="https://wiki.openwebwork.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">notations mathématiques et fonctions</a> comprises par WeBWorK (anglais).<p />

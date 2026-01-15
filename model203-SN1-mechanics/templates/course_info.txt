@@ -1,10 +1,10 @@
-Welcome to the course 203-NYA Mechanics.
+Welcome to the course 203-SN1-RE<br />
+Mechanics.
 <p>
 
-Some 
+Here are some 
 <a href="https://champlainww.ca/students/students.html" target="_blank">
 tips for students</a>.
 <br /><br />
-The 
-<a href="http://webwork.maa.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />
-
+Here are the 
+<a href="https://wiki.openwebwork.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />
