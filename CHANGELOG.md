@@ -2,6 +2,14 @@
 
 The changelog for the [model course repository](https://github.com/cslmath/model-Courses).
 
+## 2026-01-14 & 2026-01-15
+
+* Rename Physics model courses model201-NYA, -NYB, -NYC as
+  -SN1-mechanics, -SN3-waves, -SN2-RE-EM.
+* Create new Physics model courses model203-AST-astrophysics, -EMP-energy,
+  -SN2-LA-EM-fr.
+* Configure the new and renamed model courses.
+
 ## 2025-12-27
 
 * Add a .gitattributes file to ensure that all committed text files

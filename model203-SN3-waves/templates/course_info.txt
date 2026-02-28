@@ -1,0 +1,9 @@
+Welcome to the course 203-SN3-RE
+Waves and Modern Physics.
+<br /><br />
+Here are some 
+<a href="https://champlainww.ca/students/students.html" target="_blank">
+tips for students</a>.
+<br /><br />
+Here are the 
+<a href="https://wiki.openwebwork.org/wiki/Mathematical_notation_recognized_by_WeBWorK" target="_blank">mathematical notation and functions</a> that WeBWorK understands.<p />
