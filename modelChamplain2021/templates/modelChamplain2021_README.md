@@ -1,0 +1,2 @@
+This course was created from the modelCourse distributed with WeBWorK in 2021 and modified to suit our usage at the college.
+It has been edited as WeBWorK and our usage has changed, most recently in February 2026.
