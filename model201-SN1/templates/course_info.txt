@@ -1,4 +1,5 @@
-Welcome to the course Champlain College Saint Lambert Model Course.
+Welcome to the course 201-SN1-RE<br />
+Introductory Statistics.
 <br /><br />
 Here are some 
 <a href="https://champlainww.ca/students/students.html" target="_blank">
