@@ -1,0 +1,112 @@
+## DESCRIPTION
+## Linear algebra : True / False
+## ENDDESCRIPTION
+#
+########## Array and Variable Names ##########
+# @allAns, @allT, @allF ... : answer arrays of all possible display choices
+# @corrAns, @incorrAns : correct answer array, incorrect answer array
+# $numc : number of correct answers to display
+# $numi : number of incorrect answers to display
+# $showc: toggle to show the correct answer or not
+# @slicec : indices of correct answer subset
+# @slicei : indices of incorrect answer subset
+# @randc : array of correct choice(s) to display
+# @randi : array of incorrect choice(s) to display
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "PGchoicemacros.pl",
+  "PGcourse.pl",
+);
+
+#TEXT(beginproblem());
+TEXT(); # So no problem number given 
+$showPartialCorrectAnswers = 0;   # set to 0 because multiple choice
+
+Context("Numeric");
+$showPartialCorrectAnswers = 0;
+
+$numc = random(0,4,1);
+
+# Word to display: false or true
+@word = ("false","true");
+$iw = random(0,1,1);
+$iw = 1;  # always display "true" ## could remove later
+$truefalse = $word[$iw];
+
+# All answers to display
+@allT = ("If \(D\) is an invertible diagonal matrix, then all the diagonal entries are nonzero.",
+         "If \(D\) is a diagonal matrix, then \(D\) is symmetric.",
+         "If \(A\) is upper triangular, then \(A^T\) is lower triangular.",
+         "If \(C\) is symmetric and upper triangular, then \(C\) must be a diagonal matrix.",
+         );
+
+@allF = ("If \(D\) is an invertible diagonal matrix, then all the diagonal entries are positive.", 
+    "If \(B\) is a symmetric matrix, then \(B\) is invertible.", #False 
+    "If \(C\) is upper triangular, then \(C\) is symmetric.", #F
+   "If \(A\) is lower triangular, then \(A^T\) is lower triangular.",
+    );
+    
+if ($iw == 0){# f
+    @corrAns = @allF;
+    @incorrAns = @allT;
+    }
+else { # t
+    @corrAns = @allT;
+    @incorrAns = @allF;
+    }
+# Correct answers to display
+#     $numc: Display 0 to 4 correct answers
+#     @slicec: indices of subset of correct answers
+#     @randc: subset of correct answers
+$numc = random(0,4,1);  # number correct answers up to max 4
+@slicec = NchooseK(scalar(@corrAns),$numc);
+@corrAns = @corrAns[@slicec];
+# Incorrect answers to display
+#     $numi: Display 4-$numc incorrect answers
+#     @slicei: indices of subset of incorrect answers
+#     @randi: subset of incorrect answers
+$numi = 4 - $numc;
+@slicei = NchooseK(scalar(@incorrAns),$numi);
+@incorrAns = @incorrAns[@slicei]; 
+    
+$quest = ();
+$multichoice = new_checkbox_multiple_choice();
+if ($numc != 0){ # show at least one correct
+    $multichoice -> qa (
+        $quest, 
+    @corrAns,
+    );
+    $multichoice -> extra(
+    @incorrAns,
+    );
+} else { # show no correct choice ("None of the above" is correct answer)
+   $multichoice -> qa (
+        $quest, 
+        "None of the above",
+    );
+    $multichoice -> extra(
+    @incorrAns,
+    );
+}
+$multichoice -> makeLast("None of the above");
+  
+
+BEGIN_PGML
+Assume all matrices are size [`n \times n`]. Select the statement(s), if any, that are _[$truefalse]_. True means that the statement is always true.
+[@ $multichoice->print_a() @]*  
+
+END_PGML
+#  Answer evaluation
+install_problem_grader(~~&std_problem_grader);
+ANS( checkbox_cmp( $multichoice->correct_ans() ) );
+
+BEGIN_PGML_SOLUTION
+Correct answer(s): [@ $multichoice->correct_ans() @]*  
+END_PGML_SOLUTION
+
+ENDDOCUMENT();

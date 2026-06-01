@@ -1,0 +1,84 @@
+## DESCRIPTION
+## Compute the mean and standard deviation (sample)
+## from a linked (csv) data set
+## ENDDESCRIPTION
+
+## DBsubject('Statistics')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Date('2021-Feb-19')
+## Author('Malcolm Harper')
+## Institution('Champlain College Saint-Lambert')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"PGstatisticsmacros.pl",    # for insertDataLink, mean and sd
+"PGML.pl",
+"PGcourse.pl",
+);
+
+TEXT(beginproblem());
+
+Context("Numeric");
+Context()->flags->set(
+  tolerance => 0.01,
+  tolType => "absolute",
+);
+
+$showPartialCorrectAnswers = 1;
+
+#########
+# Set up
+
+$xmean = random(60,70,1);
+$xdev = random(4,6,1);
+$n = 20;
+@xdata = urand($xmean,$xdev,$n,0);
+# data is normally distributed, 0 decimal places kept
+
+##########
+# csv data file link
+
+# Label datasets
+     push(@xdata,"Data");
+
+$csvdatalink = insertDataLink($PG,"Dataset in csv format",(~~@xdata,));
+# labels get popped back off during this operation
+
+##########
+# Answers
+
+$answidth = 5;
+$anstol = 0.05;
+
+###########################
+#  Main text
+
+BEGIN_PGML
+### Mean and Standard Deviation
+
+Compute the mean and the standard deviation of the following data.
+(Use at least two decimal places of accuracy in your answers.)
+
+Data: [@ join ', ', @xdata; @]*
+
+Linked data: [@ $csvdatalink @]*
+
+
+Mean: [___]{stats_mean(@xdata)}  
+Standard deviation: [___]{stats_sd(@xdata)}
+
+END_PGML
+
+COMMENT('Problem demonstrating generating random statistical data in PG code
+  and distributing the data via csv link.');
+COMMENT('MathObject version. Uses PGML.');
+
+ENDDOCUMENT();

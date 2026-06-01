@@ -1,0 +1,86 @@
+## DESCRIPTION
+## Compute the five number summary
+## from a linked (csv) data set
+## Data set size is fixed at n=17, but easily changed in the code
+## Five number definition is consistent with the text.
+## ENDDESCRIPTION
+
+## DBsubject('Statistics')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Date('2021-Feb-19')
+## Author('Malcolm Harper')
+## Institution('Champlain College Saint-Lambert')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"PGstatisticsmacros.pl",    # for mean and sd
+"PGML.pl",
+"PGcourse.pl",
+);
+
+TEXT(beginproblem());
+
+Context("Numeric");
+Context()->flags->set(
+  tolerance => 0.06,
+  tolType => "absolute",
+);
+
+$showPartialCorrectAnswers = 1;
+
+#########
+# Set up
+
+$xmean = random(60,70,1);
+$xdev = random(4,6,1);
+$n = 17;
+@xdata = urand($xmean,$xdev,$n,0);
+# data is normally distributed, 0 decimal places kept
+
+##########
+# csv data file link
+
+# Label datasets
+     push(@xdata,"Data");
+
+$csvdatalink = insertDataLink($PG,"Dataset in csv format",(~~@xdata,));
+# labels get popped back off during this operation
+
+##########
+# Answers
+
+$answidth = 5;
+$anstol = 0.05;
+
+###########################
+#  Main text
+
+BEGIN_PGML
+### Five-number Summary
+
+Compute the five-number summary of the following data using the procedure from the class notes.
+(Use at least one decimal place of accuracy in your answers.)
+
+Data: [@ join ', ', @xdata; @]*
+
+Linked data: [@ $csvdatalink @]*
+
+
+Five-number summary: [__]{List(five_point_summary(@xdata))}{40}  
+Use commas to separate the numbers.
+
+END_PGML
+
+COMMENT('Problem demonstrating generating random statistical data in PG code
+  and distributing the data via csv link.');
+COMMENT('MathObject version. Uses PGML.');
+
+ENDDOCUMENT();

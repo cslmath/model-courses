@@ -1,0 +1,96 @@
+## DESCRIPTION
+## Experimenting, testing, templating PGstatisticsmacros.pl
+## ENDDESCRIPTION
+
+## DBsubject('')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Date('2021-Feb-')
+## Author('Malcolm Harper')
+## Institution('Champlain College Saint-Lambert')
+
+## MO(1)
+
+# Edited 2026-03-01 to tidy up the code
+
+###########################
+# Initialization
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "PGstatisticsmacros.pl", # for insertDataLink, and statistics functions
+  "PGML.pl",
+  "PGcourse.pl",
+);
+
+$showPartialCorrectAnswers = 1;
+
+TEXT(beginproblem());
+Context("Numeric");
+
+############################
+# Setup
+
+# Some random data
+@data1 = urand(10.0,2.0,10,2);    # normally distributed
+@data2 = exprand(0.1,10,2);       # exponentially distributed
+
+
+############################
+# csv data file link
+
+# Label the datasets
+  push(@data1,"x");
+  push(@data2,"y");
+
+$csvlink = insertDataLink($PG,'the data',(~~@data1,~~@data2));
+
+############################
+# Main Text
+
+BEGIN_TEXT
+
+$BBOLD
+PG
+$EBOLD$PAR
+
+x: \{ join ', ', @data1; \} $PAR
+y: \{ join ', ', @data2; \} $PAR
+
+Compute the mean of the linked data.$BR
+Data: \{ $csvlink \}$PAR
+Mean of y: \{ ans_rule(5) \}$PAR
+
+END_TEXT
+
+ANS(Compute(stats_mean(@data2))->cmp() );
+
+# Same in PGML
+
+BEGIN_PGML
+-----
+
+### PGML
+
+x: [@ join ', ', @data1; @]  
+y: [@ join ', ', @data2; @]
+
+Given the data in the csv file: [@ $csvlink @]*  
+The mean of [`x`] is: [_____]{stats_mean(@data1)}
+
+END_PGML
+
+COMMENT('Problem demonstrating generating random statistical data in PG code
+  and distributing the data via csv link.');
+COMMENT('PG and PGML code is given.');
+COMMENT('MathObject version. Uses PGML.');
+  
+ENDDOCUMENT();
