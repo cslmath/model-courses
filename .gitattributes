@@ -23,8 +23,11 @@
 *.md     text
 *.pg     text
 *.pl     text
-*.svg    text
 *.txt    text
+
+# Except treat svg as binary
+
+*.svg binary
 
 # From Model-Courses
 
